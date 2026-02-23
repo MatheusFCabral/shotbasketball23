@@ -1,0 +1,392 @@
+/* ─────────────────────────────────────────
+   SHOTBASKETBALL23 — Sections
+───────────────────────────────────────── */
+
+/* 
+══════════════════════════════
+            Navbar
+══════════════════════════════ 
+*/
+.header__icon--search,
+details-modal {
+  display: none !important;
+}
+
+.header {
+  background-color: var(--color-white);
+  border-bottom: none;
+  padding: 16px 0;
+}
+
+.header__heading-link,
+.header__heading-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Links de navegação ── */
+.header__menu-item a,
+.header__menu-item .link {
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--color-black) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.header__menu-item a:hover,
+.header__menu-item .link:hover {
+  color: var(--color-red) !important;
+}
+
+/* ── Botão SHOP ── */
+.header__menu-item--shop a,
+.header__menu-item--shop .link {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.header__menu-item--shop a:hover,
+.header__menu-item--shop .link:hover {
+  background-color: #8e1a1e;
+  color: var(--color-white);
+}
+
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--color-bg-dark);
+}
+
+/* ── Background ── */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.050;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 0.85) 0%,
+    rgba(10, 10, 10, 0.3) 60%,
+    rgba(10, 10, 10, 0.5) 100%
+  );
+}
+
+/* ── Content ── */
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  text-align: center;
+  padding: 120px 24px;
+  animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero__eyebrow {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-red);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero__title em {
+  font-style: normal;
+  color: var(--color-red);
+}
+
+.hero__subtitle {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* 
+══════════════════════════════
+   ABOUT (Hero original do designer)
+══════════════════════════════ 
+*/
+.about {
+  padding: 80px 0 0;
+}
+
+.about__title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 24px;
+}
+
+.about__text {
+  line-height: 1.7;
+  color: #444;
+  max-width: 640px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.about__image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  margin-top: 60px;
+  border-radius: 8px;
+}
+
+.about__logo {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 60px;
+}
+
+
+/* ══════════════════════════════
+   CARDS — Take Your Game
+══════════════════════════════ */
+.cards-section {
+  padding: 80px 0;
+}
+
+.cards-section__heading {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 48px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.card__title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.card__text {
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+
+/* ══════════════════════════════
+   TAKING PLAYERS — Split Section
+══════════════════════════════ */
+.taking-players {
+  padding: 80px 0;
+}
+
+.taking-players__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.taking-players__title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 40px;
+}
+
+.taking-players__items {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.taking-players__item-title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+
+.taking-players__item-text {
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+
+.taking-players__image {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ══════════════════════════════
+   EXPLORE
+══════════════════════════════ */
+.explore {
+  padding: 80px 0;
+}
+
+.explore__heading {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 40px;
+}
+
+.explore__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.explore__card-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.explore__card-title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.explore__card-subtitle {
+  color: var(--color-gray);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.site-footer {
+  padding: 60px 0 40px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 40px;
+}
+
+.site-footer__brand {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.site-footer__socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: right;
+}
+
+.site-footer__nav a {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-black);
+  transition: color 0.2s;
+}
+
+.site-footer__nav a:hover {
+  color: var(--color-red);
+}
+
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh auto;
+    min-height: 100svh;
+  }
+
+  .hero__left { order: 2; padding: 48px 24px; }
+  .hero__right { order: 1; }
+
+  .cards-grid { grid-template-columns: 1fr; }
+
+  .taking-players__inner { grid-template-columns: 1fr; }
+  .taking-players__image { min-height: 280px; }
+
+  .explore__grid { grid-template-columns: 1fr; }
+
+  .site-footer__inner { grid-template-columns: 1fr; }
+  .site-footer__nav { text-align: left; }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__content {
+    padding: 80px 24px;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+}

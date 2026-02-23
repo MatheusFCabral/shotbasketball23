@@ -1,0 +1,119 @@
+/* ─────────────────────────────────────────
+   SHOTBASKETBALL23 — Global Styles
+───────────────────────────────────────── */
+
+:root {
+  --color-white:   #FFFFFF;
+  --color-red:     #AC1F24;
+  --color-black:   #000000;
+  --color-gray:    #aaaaaa;
+  --color-bg-dark: #0a0a0a;
+
+  --font-family:   'Inter', sans-serif;
+  --font-weight:   400;
+  --font-size-base: 24px;
+  --line-height:   1.5;
+
+  --container-max: 1200px;
+  --container-pad: 24px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--color-black);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── Container ── */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+/* ── Tipografia global ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.05;
+  color: var(--color-black);
+}
+
+/* ── Botões globais ── */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn--red {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.btn--red:hover {
+  background-color: #8e1a1e;
+}
+
+.btn--outline-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  padding: 14px 0;
+}
+
+.btn--outline-white:hover {
+  color: var(--color-red);
+  border-color: var(--color-red);
+}
+
+/* ── Animações globais ── */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

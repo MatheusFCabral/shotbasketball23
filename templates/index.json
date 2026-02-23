@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {}
+    },
+    "about": {
+      "type": "about",
+      "settings": {}
+    },
+    "cards": {
+      "type": "cards",
+      "settings": {}
+    },
+    "taking-players": {
+      "type": "taking-players",
+      "settings": {}
+    },
+    "explore": {
+      "type": "explore",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "about",
+    "cards",
+    "taking-players",
+    "explore"
+  ]
+}
