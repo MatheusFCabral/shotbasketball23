@@ -7,55 +7,43 @@
             Navbar
 ══════════════════════════════ 
 */
+
+
+/* ── Navbar ── */
 .header__icon--search,
 details-modal {
   display: none !important;
 }
 
 .header {
-  background-color: var(--color-white);
-  border-bottom: none;
-  padding: 16px 0;
-}
-
-.header__heading-link,
-.header__heading-logo {
-  display: flex;
-  align-items: center;
+  padding: 16px 3rem !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 /* ── Links de navegação ── */
-.header__menu-item a,
-.header__menu-item .link {
-  font-weight: 700 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-  color: var(--color-black) !important;
+a.header__menu-item.list-menu__item {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-black);
   text-decoration: none !important;
-  transition: color 0.2s ease !important;
+  transition: color 0.2s ease;
 }
 
-.header__menu-item a:hover,
-.header__menu-item .link:hover {
-  color: var(--color-red) !important;
+a.header__menu-item.list-menu__item:hover {
+  color: var(--color-red);
+  text-decoration: none !important;
 }
 
-/* ── Botão SHOP ── */
-.header__menu-item--shop a,
-.header__menu-item--shop .link {
-  background-color: var(--color-red);
-  color: var(--color-white);
-  padding: 10px 24px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
+a.header__menu-item.header__active-menu-item{
+  text-decoration: none !important;
 }
 
-.header__menu-item--shop a:hover,
-.header__menu-item--shop .link:hover {
-  background-color: #8e1a1e;
-  color: var(--color-white);
+.section-header .page-width {
+  max-width: 150rem;
+  padding: 0 3rem;
 }
-
 
 /* ══════════════════════════════
    HERO
