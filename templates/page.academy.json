@@ -8,15 +8,11 @@
  * ------------------------------------------------------------
  */
 {
-  "name": "t:sections.footer.name",
-  "type": "footer",
   "sections": {
-    "footer-custom": {
-      "type": "footer-custom",
+    "page-academy": {
+      "type": "page-academy",
       "settings": {}
     }
   },
-  "order": [
-    "footer-custom"
-  ]
+  "order": ["page-academy"]
 }

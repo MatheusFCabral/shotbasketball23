@@ -1,0 +1,49 @@
+<div class="page-about">
+
+  <!-- ── Split: Texto + Imagem ── -->
+  <section class="about-split">
+    <div class="container">
+      <div class="about-split__inner">
+
+        <div class="about-split__left">
+          <h1 class="about-split__title">ABOUT US</h1>
+          <p class="about-split__eyebrow">A BRIEF INTRODUCTION</p>
+
+          <p class="about-split__text">
+            SHOTBASKETBALL23 is a professional basketball skills academy based in Barcelona, founded in 2020.
+          </p>
+          <p class="about-split__text">
+            We provide a structured, high-intensity, and holistic training program for players of all levels: from beginners to professional athletes. Our approach combines technical and athletic development with mental preparation and character growth to build complete players on and off the court. Founded by passionate coach Tatan Gomez, SHOTBASKETBALL23 began as an ambitious project and quickly developed into one of the most recognized up-and-coming basketball-skills-program.
+          </p>
+          <p class="about-split__text">
+            Our results reflect our commitment to excellence, discipline, and true passion for the game.
+          </p>
+            <img
+            src="{{ '/images/logo-icon.png' | asset_url }}"
+            alt="ShotBasketball23 logo"
+            loading="lazy"
+            class="about-contact__logo"
+          >
+        </div>
+
+        <div class="about-split__right">
+          <img
+            src="{{ '/images/about-main.png' | asset_url }}"
+            alt="ShotBasketball23 training"
+            loading="eager"
+            class="about-split__image"
+          >
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{% schema %}
+{
+  "name": "About Us",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,84 @@
+<div class="page-training">
+
+  <!-- ── Hero Texto ── -->
+  <section class="training-hero">
+    <div class="container">
+      <h1 class="training-hero__title">TRAINING PHILOSOPHY</h1>
+      <p class="training-hero__subtitle">
+        Subheading that sets up context, shares more info about the author, or generally gets people psyched to keep reading
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Imagem Central ── -->
+  <section class="training-image">
+    <div class="container">
+      <img
+        src="{{ '/images/training-main.png' | asset_url }}"
+        alt="Training session"
+        loading="eager"
+        class="training-image__img"
+        width="auto"
+        height="auto"
+      >
+    </div>
+  </section>
+
+  <!-- ── Bloco de Texto ── -->
+  <section class="training-text">
+    <div class="container">
+      <div class="text-box">
+        <div class="training-text__inner">
+          <p class="training-text__paragraph">
+            Our success lies in the seamless combination of personalized attention and a professional, proven training methodology. We offer individual and group sessions carefully tailored to each athlete's age and skill level, supported by both technical and mental coaching with a strong focus on shooting, ball control, and game intelligence.
+          </p>
+          <p class="training-text__paragraph">
+            By integrating established high level training principles and working closely with experienced Coaches and engaged Trainers, we ensure a high-performance environment. At the heart of our philosophy is a long-term vision: prioritizing athletic and personal development over short-term results.
+          </p>
+          <p class="training-text__highlight">
+            Because at SHOTBASKETBALL23, we don't just develop better players ... we help shape stronger individuals!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Grid de 2 Fotos ── -->
+  <section class="training-gallery">
+    <div class="container">
+      <div class="training-gallery__grid">
+        <img
+          src="{{ '/images/training-gallery-1.png' | asset_url }}"
+          alt="Training drill"
+          loading="lazy"
+          class="training-gallery__img"
+          width="auto"
+          height="auto"
+        >
+        <img
+          src="{{ '/images/training-gallery-2.png' | asset_url }}"
+          alt="Training drill"
+          loading="lazy"
+          class="training-gallery__img"
+          width="auto"
+          height="auto"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Texto ── -->
+  <section class="training-cta">
+    <div class="container">
+      <p class="training-cta__text">TAKING PLAYERS<br>TO THE NEXT LEVEL!</p>
+    </div>
+  </section>
+
+</div>
+
+{% schema %}
+{
+  "name": "Training Philosophy",
+  "settings": []
+}
+{% endschema %}

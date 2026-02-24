@@ -1,0 +1,167 @@
+<div class="page-events">
+
+  <!-- ── Hero ── -->
+  <section class="events-hero">
+    <div class="events-hero__bg">
+      <img
+        src="{{ '/images/hero.png' | asset_url }}"
+        alt="Events"
+        loading="eager"
+        fetchpriority="high"
+      >
+      <div class="events-hero__overlay"></div>
+    </div>
+    <div class="events-hero__content">
+      <p class="events-hero__eyebrow">Barcelona — Since 2020</p>
+      <h1 class="events-hero__title">EVENTS</h1>
+      <p class="events-hero__subtitle">Stay up to date with our upcoming camps, trainings, and special events.</p>
+    </div>
+  </section>
+
+  <!-- ── Lista de Eventos ── -->
+  <section class="events-list">
+    <div class="container">
+
+      {% for block in section.blocks %}
+        {% if block.type == 'event' %}
+          <div class="event" {{ block.shopify_attributes }}>
+
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | image_url: width: 600 }}"
+                alt="{{ block.settings.title }}"
+                loading="lazy"
+                class="event__thumbnail"
+              >
+            {% else %}
+              <img
+                src="https://picsum.photos/seed/{{ forloop.index }}/600/450"
+                alt="{{ block.settings.title }}"
+                loading="lazy"
+                class="event__thumbnail"
+              >
+            {% endif %}
+
+            <div class="event__body">
+              <div class="event__header">
+                <div class="event__meta">
+                  <span class="event__date">{{ block.settings.date }}</span>
+                  {% if block.settings.time != blank %}
+                    <span class="event__separator">·</span>
+                    <span class="event__time">{{ block.settings.time }}</span>
+                  {% endif %}
+                  {% if block.settings.location != blank %}
+                    <span class="event__separator">·</span>
+                    <span class="event__location">{{ block.settings.location }}</span>
+                  {% endif %}
+                </div>
+                {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                  <a href="{{ block.settings.button_url }}" class="btn btn--red event__btn">
+                    {{ block.settings.button_label }}
+                  </a>
+                {% endif %}
+              </div>
+
+              <h2 class="event__title">{{ block.settings.title }}</h2>
+
+              {% if block.settings.description != blank %}
+                <p class="event__description">{{ block.settings.description }}</p>
+              {% endif %}
+
+              {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                <a href="{{ block.settings.button_url }}" class="btn btn--red event__btn--mobile">
+                  {{ block.settings.button_label }}
+                </a>
+              {% endif %}
+            </div>
+
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% if section.blocks.size == 0 %}
+        <p style="color: #888; padding: 48px 0;">No events scheduled yet. Add events in the customizer.</p>
+      {% endif %}
+
+    </div>
+  </section>
+
+</div>
+
+{% schema %}
+{
+  "name": "Events",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "event",
+      "name": "Event",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Event title",
+          "default": "Event Title"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date",
+          "default": "March 23, 2025"
+        },
+        {
+          "type": "text",
+          "id": "time",
+          "label": "Time",
+          "default": "10:00 AM – 2:00 PM"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location",
+          "default": "Barcelona"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Thumbnail image"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Register Now"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Events",
+      "blocks": [
+        {
+          "type": "event",
+          "settings": {
+            "title": "Spring Basketball Camp",
+            "date": "March 23, 2025",
+            "time": "10:00 AM – 2:00 PM",
+            "location": "Pavelló Municipal, Barcelona",
+            "description": "A full-day intensive camp focused on individual skill development for players aged 10–16.",
+            "button_label": "Register Now"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

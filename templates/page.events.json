@@ -1,0 +1,57 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-events": {
+      "type": "page-events",
+      "settings": {},
+      "blocks": {
+        "event-1": {
+          "type": "event",
+          "settings": {
+            "title": "Spring Basketball Camp",
+            "date": "March 23, 2025",
+            "time": "10:00 AM – 2:00 PM",
+            "location": "Pavelló Municipal, Barcelona",
+            "description": "A full-day intensive camp focused on individual skill development for players aged 10–16. Sessions include shooting mechanics, ball handling, footwork, and 1-on-1 defense. All levels welcome.",
+            "button_label": "Register Now",
+            "button_url": "#"
+          }
+        },
+        "event-2": {
+          "type": "event",
+          "settings": {
+            "title": "Group Training Session — April",
+            "date": "April 12, 2025",
+            "time": "9:00 AM – 1:00 PM",
+            "location": "Pavelló Municipal, Barcelona",
+            "description": "Monthly group training session open to all skill levels. Focus on team dynamics, game intelligence, and competitive drills. Limited spots available — register early.",
+            "button_label": "Register Now",
+            "button_url": "#"
+          }
+        },
+        "event-3": {
+          "type": "event",
+          "settings": {
+            "title": "Elite Performance Day",
+            "date": "May 3, 2025",
+            "time": "10:00 AM – 6:00 PM",
+            "location": "Pavelló Municipal, Barcelona",
+            "description": "A full-day high-performance event for advanced players looking to elevate their game. Includes individual assessments, position-specific training, and competitive scrimmages with coaching feedback.",
+            "button_label": "Register Now",
+            "button_url": "#"
+          }
+        }
+      },
+      "block_order": ["event-1", "event-2", "event-3"]
+    }
+  },
+  "order": ["page-events"]
+}
