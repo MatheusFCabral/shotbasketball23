@@ -1,0 +1,43 @@
+<section class="hero-split">
+
+  <!-- ── Lado direito: imagem ── -->
+  <div class="hero-split__right">
+    <img
+      src="{{ '/images/training-main.png' | asset_url }}"
+      alt="ShotBasketball23 Team"
+      loading="eager"
+      fetchpriority="high"
+      class="hero-split__image"
+    >
+  </div>
+
+  <!-- ── Lado esquerdo: fundo preto + diagonal ── -->
+  <div class="hero-split__left">
+    <span aria-hidden="true"></span>
+  </div>
+
+  <!-- ── Conteúdo alinhado ao container ── -->
+  <div class="hero-split__content-wrapper">
+    <div class="container">
+      <div class="hero-split__content">
+        <p class="hero-split__eyebrow">Barcelona — Since 2020</p>
+        <h1 class="hero-split__title">TAKE YOUR GAME TO THE <em>NEXT LEVEL</em></h1>
+        <p class="hero-split__subtitle">
+          Professional basketball skills academy combining athletic performance with mental and character development.
+        </p>
+        <div class="hero-split__actions">
+          <a href="/pages/events" class="btn btn--red">EVENTS</a>
+          <a href="/pages/academy" class="btn btn--red">TRAINING</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Hero Split",
+  "settings": []
+}
+{% endschema %}
