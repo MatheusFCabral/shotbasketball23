@@ -27,6 +27,7 @@ a.header__menu-item.list-menu__item {
   text-decoration: none !important;
   transition: color 0.2s ease;
   margin: 0px 7px;
+  font-size: 1.9rem;
 }
 
 a.header__menu-item.list-menu__item:hover {
@@ -200,20 +201,20 @@ a.header__menu-item.header__active-menu-item{
   /* No mobile a imagem vira fundo com overlay */
   .hero-split__right {
     width: 100%;
-    opacity: 0.3;
+    opacity: 1;
   }
 
   .hero-split__left {
     clip-path: none;
     background: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.95) 60%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0.0) 54%
     );
   }
 
   .hero-split__content-wrapper {
-    height: 70svh;
+    height: 91svh;
     align-items: flex-end;
     padding-bottom: 60px;
   }
@@ -328,15 +329,15 @@ a.header__menu-item.header__active-menu-item{
 .about__text {
   line-height: 1.7;
   color: #444;
-  max-width: 640px;
   margin-bottom: 40px;
   font-weight: 400;
 }
 
 .about__image {
   width: 100%;
-  height: 480px;
+  height: 650px;
   object-fit: cover;
+  object-position: 0% 79%;
   margin-top: 60px;
   border-radius: 8px;
 }
@@ -359,7 +360,8 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .cards-section__heading {
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(2.2rem, 3vw, 4rem);
+  font-weight: 600;
   margin-bottom: 48px;
 }
 
@@ -372,6 +374,7 @@ a.header__menu-item.header__active-menu-item{
 .card__image {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
   margin-bottom: 16px;
   border-radius: 8px;
 }
@@ -403,7 +406,8 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .taking-players__title {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(2.2rem, 3vw, 4rem);
+  font-weight: 600;
   margin-bottom: 40px;
 }
 
@@ -428,9 +432,10 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .taking-players__image {
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-position: 0% 10%;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -443,7 +448,8 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .explore__heading {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(2.2rem, 3vw, 4rem);
+  font-weight: 600;
   margin-bottom: 40px;
 }
 
@@ -581,7 +587,7 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .training-hero__subtitle {
-  max-width: 750px;
+  max-width: 100%;
   line-height: 1.6;
   color: #555;
 }
@@ -593,10 +599,9 @@ a.header__menu-item.header__active-menu-item{
 
 .training-image__img {
   width: 100%;
-  max-width: 680px;
+  max-height: 465px;
   margin: 0 auto;
   display: block;
-  aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -612,7 +617,7 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .training-text__inner {
-  max-width: 640px;
+  max-width: 840px;
 }
 
 .training-text__paragraph {
@@ -626,6 +631,7 @@ a.header__menu-item.header__active-menu-item{
   font-weight: 700;
   line-height: 1.6;
   margin-top: 16px;
+  font-size: 3.2rem;
 }
 
 /* ── Grid de 2 Fotos ── */
@@ -641,7 +647,7 @@ a.header__menu-item.header__active-menu-item{
 
 .training-gallery__img {
   width: 100%;
-  aspect-ratio: 4/3;
+  max-height: 750px;
   object-fit: cover;
   border-radius: 8px;
 }
