@@ -11,47 +11,56 @@
   "sections": {
     "page-events": {
       "type": "page-events",
-      "settings": {},
       "blocks": {
-        "event-1": {
-          "type": "event",
-          "settings": {
-            "title": "Spring Basketball Camp",
-            "date": "March 23, 2025",
-            "time": "10:00 AM – 2:00 PM",
-            "location": "Pavelló Municipal, Barcelona",
-            "description": "A full-day intensive camp focused on individual skill development for players aged 10–16. Sessions include shooting mechanics, ball handling, footwork, and 1-on-1 defense. All levels welcome.",
-            "button_label": "Register Now",
-            "button_url": "#"
-          }
-        },
         "event-2": {
           "type": "event",
           "settings": {
-            "title": "Group Training Session — April",
-            "date": "April 12, 2025",
-            "time": "9:00 AM – 1:00 PM",
-            "location": "Pavelló Municipal, Barcelona",
-            "description": "Monthly group training session open to all skill levels. Focus on team dynamics, game intelligence, and competitive drills. Limited spots available — register early.",
+            "title": "SB23 Easter Camp Manresa",
+            "date": "30/03 - 01/04/26",
+            "time": "10:00 - 13:00 hrs",
+            "location": "Centro Deportivo Ateneu Les Bases – Manresa",
+            "description": "PLANNING DE TRABAJO ESPECIAL VERANO\n-Acondicionamiento y preparación física\n-Shooting machine\n-Trabajo de bote (Ball Handling)\n-Concurso de habilidades\n-Cambios de ritmo (Velocidad, Timing)\n-Finalizaciones con contacto",
+            "image": "shopify://shop_images/img-card-2.png",
             "button_label": "Register Now",
-            "button_url": "#"
+            "button_url": "#https://docs.google.com/forms/d/e/1FAIpQLSc4uR5dkN7yUPCH1YVZwlnGqWXj3U0iWssh1Pv-Voffn-muEg/viewform"
+          }
+        },
+        "event-1": {
+          "type": "event",
+          "settings": {
+            "title": "Barcelona - Summer Camp - SHOTBASKETBALL23 - Junio 2026 ",
+            "date": "29/06 – 03/07/2026  ",
+            "time": "10:00 - 13:00 hrs",
+            "location": "Forus Sardenya  – Barcelona, Gracia",
+            "description": "PLANNING DE TRABAJO ESPECIAL VERANO\n-Acondicionamiento y preparación física\n-Shooting machine\n-Trabajo de bote (Ball Handling)\n-Concurso de habilidades\n-Cambios de ritmo (Velocidad, Timing)\n-Finalizaciones con contacto",
+            "image": "shopify://shop_images/about-us.png",
+            "button_label": "Register Now",
+            "button_url": "#https://docs.google.com/forms/d/e/1FAIpQLSeRiE00O5GgkZhEheS6Xlnq9QVeSl-F77M2id0r4gsX6A_ccQ/viewform"
           }
         },
         "event-3": {
           "type": "event",
           "settings": {
-            "title": "Elite Performance Day",
-            "date": "May 3, 2025",
-            "time": "10:00 AM – 6:00 PM",
+            "title": "SHOTBASKETBALL23 – CATALUNYA TOUR EDICIÓN Primavera",
+            "date": " 01/05/2026   ",
+            "time": "10:00 - 13:00 hrs",
             "location": "Pavelló Municipal, Barcelona",
-            "description": "A full-day high-performance event for advanced players looking to elevate their game. Includes individual assessments, position-specific training, and competitive scrimmages with coaching feedback.",
+            "description": "PLANNING DE TRABAJO ESPECIAL VERANO\n-Acondicionamiento y preparación física\n-Shooting machine\n-Trabajo de bote (Ball Handling)\n-Concurso de habilidades\n-Cambios de ritmo (Velocidad, Timing)\n-Finalizaciones con contacto",
+            "image": "shopify://shop_images/img-card-3.png",
             "button_label": "Register Now",
-            "button_url": "#"
+            "button_url": "#https://docs.google.com/forms/d/e/1FAIpQLSfNigyxoPDQ036FTzZjI8ZKIl7_76bl5EqLYJLx1jM5KdOX-A/viewform"
           }
         }
       },
-      "block_order": ["event-1", "event-2", "event-3"]
+      "block_order": [
+        "event-2",
+        "event-1",
+        "event-3"
+      ],
+      "settings": {}
     }
   },
-  "order": ["page-events"]
+  "order": [
+    "page-events"
+  ]
 }

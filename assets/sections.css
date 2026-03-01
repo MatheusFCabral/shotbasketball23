@@ -939,25 +939,36 @@ a.header__menu-item.header__active-menu-item{
   flex-shrink: 0;
 }
 
+/* ── Event Body: grid 3 áreas ── */
 .event__body {
-  display: flex;
-  flex-direction: column;
-}
-
-.event__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "meta    cta"
+    "content cta";
+  gap: 0 32px;
+  align-items: start;
 }
 
 .event__meta {
+  grid-area: meta;
   display: flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.event__content {
+  grid-area: content;
+}
+
+.event__btn {
+  grid-area: cta;
+  align-self: center;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .event__date {
@@ -976,7 +987,7 @@ a.header__menu-item.header__active-menu-item{
 }
 
 .event__title {
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.9rem, 2.5vw, 2rem);
   font-weight: 900;
   text-transform: uppercase;
   color: var(--color-black);
@@ -987,11 +998,6 @@ a.header__menu-item.header__active-menu-item{
   color: #555;
   line-height: 1.7;
   max-width: 720px;
-}
-
-.event__btn {
-  flex-shrink: 0;
-  white-space: nowrap;
 }
 
 /* ── Botão mobile (escondido no desktop) ── */
@@ -1005,6 +1011,7 @@ a.header__menu-item.header__active-menu-item{
     min-height: 40vh;
   }
 
+  /* Card vira coluna unica */
   .event {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1014,21 +1021,27 @@ a.header__menu-item.header__active-menu-item{
     width: 100%;
   }
 
-  /* Esconde botão do header no mobile */
+  /* Body vira coluna simples */
+  .event__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .event__meta {
+    margin-bottom: 12px;
+  }
+
+  /* Esconde botão do desktop no mobile */
   .event__btn {
     display: none;
   }
 
-  /* Mostra botão mobile por último, abaixo da descrição */
+  /* Mostra botão mobile por último */
   .event__btn--mobile {
     display: inline-block;
     width: 100%;
     text-align: center;
     margin-top: 24px;
-  }
-
-  .event__header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }

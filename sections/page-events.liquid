@@ -43,29 +43,30 @@
             {% endif %}
 
             <div class="event__body">
-              <div class="event__header">
-                <div class="event__meta">
-                  <span class="event__date">{{ block.settings.date }}</span>
-                  {% if block.settings.time != blank %}
-                    <span class="event__separator">·</span>
-                    <span class="event__time">{{ block.settings.time }}</span>
-                  {% endif %}
-                  {% if block.settings.location != blank %}
-                    <span class="event__separator">·</span>
-                    <span class="event__location">{{ block.settings.location }}</span>
-                  {% endif %}
-                </div>
-                {% if block.settings.button_label != blank and block.settings.button_url != blank %}
-                  <a href="{{ block.settings.button_url }}" class="btn btn--red event__btn">
-                    {{ block.settings.button_label }}
-                  </a>
+
+              <div class="event__meta">
+                <span class="event__date">{{ block.settings.date }}</span>
+                {% if block.settings.time != blank %}
+                  <span class="event__separator">·</span>
+                  <span class="event__time">{{ block.settings.time }}</span>
+                {% endif %}
+                {% if block.settings.location != blank %}
+                  <span class="event__separator">·</span>
+                  <span class="event__location">{{ block.settings.location }}</span>
                 {% endif %}
               </div>
 
-              <h2 class="event__title">{{ block.settings.title }}</h2>
+              <div class="event__content">
+                <h2 class="event__title">{{ block.settings.title }}</h2>
+                {% if block.settings.description != blank %}
+                  <p class="event__description">{{ block.settings.description }}</p>
+                {% endif %}
+              </div>
 
-              {% if block.settings.description != blank %}
-                <p class="event__description">{{ block.settings.description }}</p>
+              {% if block.settings.button_label != blank and block.settings.button_url != blank %}
+                <a href="{{ block.settings.button_url }}" class="btn btn--red event__btn">
+                  {{ block.settings.button_label }}
+                </a>
               {% endif %}
 
               {% if block.settings.button_label != blank and block.settings.button_url != blank %}
@@ -73,6 +74,7 @@
                   {{ block.settings.button_label }}
                 </a>
               {% endif %}
+
             </div>
 
           </div>
