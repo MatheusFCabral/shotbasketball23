@@ -351,6 +351,12 @@ a.header__menu-item.header__active-menu-item{
   margin-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .about__image {
+    height: 450px;
+    object-position: 33% 79%;
+  }
+}
 
 /* ══════════════════════════════
    CARDS — Take Your Game
